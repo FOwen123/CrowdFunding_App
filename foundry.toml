@@ -2,5 +2,9 @@
 src = "src"
 out = "out"
 libs = ["lib"]
+remappings = [
+  '@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/',
+]
+ffi = true # Foreign Function Interface allows a smart contract testing framework (like Foundry) to execute external system commands from the test environment.
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
